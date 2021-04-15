@@ -1,0 +1,5 @@
+export enum AUTH_STATE_USER_ACTION_TYPES {
+  LOGIN = '[User] LOGIN',
+  LOGIN_COMPLETE = '[User] LOGIN_COMPLETE',
+  LOGIN_ERROR = '[User] LOGIN_ERROR',
+}

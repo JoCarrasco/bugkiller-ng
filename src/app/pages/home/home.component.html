@@ -1,0 +1,8 @@
+<div>
+  <form [formGroup]="authenticationForm" (ngSubmit)="onSubmit()">
+    <input formControlName="email" (keyup)="watchValue()" type="email" placeholder="Enter email">
+    <input formControlName="password" (keyup)="watchValue()" type="password" placeholder="Enter password">
+  </form>
+  <p>Or</p>
+  <button>Sign in with Google</button>
+</div>
