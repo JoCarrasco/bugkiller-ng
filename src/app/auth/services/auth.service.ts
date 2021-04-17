@@ -12,6 +12,7 @@ export class AuthService {
   constructor(private http: HttpClient) { }
 
   login(userAuthForm: IUserAuthenticationForm): Observable<{ token: string }> {
+    console.log('Auth service clicked');
     return this.http.post<{ token: string }>('', userAuthForm);
   }
 }
