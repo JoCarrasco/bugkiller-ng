@@ -1,0 +1,15 @@
+<div class="wrapper">
+  <div class="container">
+    <h1>Login</h1>
+    <div class="error-log" *ngIf="errorMessage$ | async as errorMessage">
+      <p>{{ errorMessage }}</p> 
+    </div>
+    <form [formGroup]="authenticationForm">
+      <input formControlName="email" type="email" placeholder="Enter email">
+      <input formControlName="password" type="password" placeholder="Enter password">
+      <button (click)="onSubmit()">Login</button>
+    </form>
+    <p>Or</p>
+    <button>Sign in with Google</button>
+  </div>
+</div>

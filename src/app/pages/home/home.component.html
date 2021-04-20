@@ -1,9 +1,0 @@
-<div>
-  <form [formGroup]="authenticationForm">
-    <input formControlName="email" (keyup)="watchValue()" type="email" placeholder="Enter email">
-    <input formControlName="password" (keyup)="watchValue()" type="password" placeholder="Enter password">
-    <button (click)="onSubmit()">Submit</button>
-  </form>
-  <p>Or</p>
-  <button>Sign in with Google</button>
-</div>
